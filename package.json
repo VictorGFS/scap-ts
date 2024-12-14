@@ -1,0 +1,35 @@
+{
+  "name": "scap-ts",
+  "version": "0.1.0",
+  "description": "A TypeScript library to manage SCAP content programmatically.",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "bun run tsc",
+    "test": "bun test",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "prepare": "bun run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorGFS/scap-ts.git"
+  },
+  "license": "MIT",
+  "keywords": ["SCAP", "Cybersecurity", "Compliance", "TypeScript", "Library"],
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}
